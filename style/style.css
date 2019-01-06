@@ -1,0 +1,68 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.bg {
+  background-image: url("bg.jpg");
+  height: 100%;
+  position: relative;
+  opacity: 0.65;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0px;
+}
+
+.myName{
+  font-size: 20px;
+}
+
+.banner {
+  width: 20%;
+  background-color: #8AA2A9;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Courier", monospace;
+  padding-bottom: 3px;
+}
+
+.bannerWrapper{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+
+.links > a{
+  position:relative;
+  color: #000;
+  text-decoration: none;
+}
+
+.links > a:hover{
+  color: #000;
+}
+
+.links > a:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.links a:hover:before{
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
