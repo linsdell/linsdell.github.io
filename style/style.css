@@ -21,7 +21,7 @@ body, html {
 
 .banner {
   width: 20%;
-  background-color: #8AA2A9;
+  /* background-color: #8AA2A9; */
   margin: 0 auto;
   text-align: center;
   font-family: "Courier", monospace;
